@@ -28,18 +28,18 @@ python3 add_message_html.py
 ```
 
 ## 使用上の注意  
-移動元と移動先のディレクトリー構造とファイル名は同じものであると仮定している。 
-<head>や<body>の続きタグやメッセージを追加するだけで、改行コードは追加していない。　
-<head> ～</head>の間にutf-8又はUTF-8 の記述がある場合、utf-8として追加する（不完全な）仕様になっている。  
+移動元と移動先のディレクトリー構造とファイル名は同じものであると仮定している。   
+headタグやbodyタグの続きにメッセージを追加するだけで、改行コードは追加していない。  
+utf-8又はUTF-8 の記述がある場合だけ、utf-8と判断する（不完全な）仕様になっている。  
 サブディレクトリの探索に再帰的な glob を使っているため、python 3.5以上が必要。  
 Windowsで動作を確認している。他のOSやpython 2では文字コードの扱いが異なるため、ソースの修正が必要。  
 sampleフォルダーの中に、元のhtmlと生成したhtmlのサンプルがあります。  
 
 ## 免責事項  
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,  
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS  
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL  
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,  
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
 #### 上記はMITライセンスからの抜粋です。
