@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><rel="canonical" href="http://example.jp/test.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>リダイレクトhtmlの自動生成</title>
+<meta name="description" content="ホームページの引っ越しのために作成した。" />
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-lg px-3 my-5 markdown-body">
+<h1>リダイレクトhtmlの自動生成</h1>
+
+<h2>概要  </h2>
+<p>ホームページの引っ越しのために作成した。<br />
+カレントディレクトリ以下の既在のhtmlファイルと同じ名称をもつリダイレクト内容のhtmlや、
+既在のhtmlファイルにcanonicalタグを追加したhtmlを生成するもの。</p>
+
+
+<h2>内容  </h2>
+
+<p>カレントディレクトリ以下の既在のhtmlファイルと同じ名称をもつ、リダイレクト内容のhtml(UTF-8)を生成する。<br />
+移転先のURLや保存先などを設定する。<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 make_redirect_html.py
+</code></pre></div></div>
+
+<p>カレントディレクトリ以下の既在のhtmlファイルの&lt;head&gt;の次にcanonicalタグを追加したhtmlファイルを生成する。<br />
+移転先のURLや保存先などを設定する。<br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 add_canonical_html.py
+</code></pre></div></div>
+
+<p>カレントディレクトリ以下の既在のhtmlファイルの&lt;body&gt;の次にメッセージ文を追加したhtmlファイルを生成する。<br />
+移転先のURLや保存先やメッセージなどを設定する。<br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+python3 add_message_html.py
+</code></pre></div></div>
+
+<h2>使用上の注意  </h2>
+<p>移動元と移動先のディレクトリー構造とファイル名は同じものであると仮定している。 
+&lt;head&gt;や&lt;body&gt;の続きタグやメッセージを追加するだけで、改行コードは追加していない。　
+&lt;head&gt; ～&lt;/head&gt;の間にutf-8又はUTF-8 の記述がある場合、utf-8として追加する（不完全な）仕様になっている。<br />
+サブディレクトリの探索に再帰的な glob を使っているため、python 3.5以上が必要。<br />
+Windowsで動作を確認している。他のOSやpython 2では文字コードの扱いが異なるため、ソースの修正が必要。<br /></p>
+
+
+</div>
+</body>
+</html>
