@@ -12,8 +12,8 @@ dir_out='.\\output_html\\'
 # ファイル拡張子
 ext0='.html'
 # メッセージ文= mess0 + url0 + mess1
-mess0='<font color="red"><b>当ページは<a href=”'
-mess1='”>ここに</a>に移転しました。</b></font><br><br>'
+mess0='<font color="red"><b>当ページは<a href="'
+mess1='">ここに</a>に移転しました。</b></font><br><br>'
 
 # Check version 
 # python 3.6.4 win32 (64bit) 
@@ -65,8 +65,9 @@ for path_org in List1:
     c1=comp0(data_org, '</head>' )     # </head> タグの位置を返す。見つからない場合は -1を返す。
     c2a=comp0(data_org[c0:c1], 'utf-8') # c0とc1の間に　utf-8 の位置を返す。見つからない場合は -1を返す。
     c2b=comp0(data_org[c0:c1], 'UTF-8') # c0とc1の間に　UTF-8 の位置を返す。見つからない場合は -1を返す。
-    c3=comp0(data_org, '<body>' )       # <body> タグの位置を返す。見つからない場合は -1を返す。
-
+    c3=comp0(data_org, '<body' )       # <body タグの位置を返す。見つからない場合は -1を返す。
+    if c3 > -1:
+        c3 +=comp0(data_org[c3:-1], '>' )  # body タグの終了>位置を返す。見つからない場合は -1を返す。
     
     if c3 > 0 :    #  <body>　タグの位置が既知の場合は <head>の次に以下を追加する。
         if c2a > -1 or c2b > -1:
