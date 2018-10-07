@@ -65,7 +65,7 @@ for path_org in List1:
     
     if c0 > 0 :   #  <head>　タグの位置が既知の場合は <head>の次に以下を追加する。
         # create canonical tag sentence
-        can0= '<rel="canonical" href="' + url0 + '">'
+        can0= '<link rel="canonical" href="' + url0 + '">'
         
         if c2a > -1 or c2b > -1:
             # <head> ～</head>の間にutf-8又はUTF-8 の記述がある場合。この判別方法は不完全である。
