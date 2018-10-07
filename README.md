@@ -14,20 +14,20 @@
 python3 make_redirect_html.py
 ```
 
-カレントディレクトリ以下の既在のhtmlファイルの<head>の次にcanonicalを追加したhtmlファイルを生成する。  
+カレントディレクトリ以下の既在のhtmlファイルのheadタグの次にcanonicalを追加したhtmlファイルを生成する。  
 移転先のURLや保存先などを設定する。  
 
 ```
 python3 add_canonical_html.py
 ```
 
-カレントディレクトリ以下の既在のhtmlファイルの<body>の次にメッセージ文を追加したhtmlファイルを生成する。  
+カレントディレクトリ以下の既在のhtmlファイルのbodyタグの次にメッセージ文を追加したhtmlファイルを生成する。  
 移転先のURLや保存先やメッセージなどを設定する。  
 ```
 python3 add_message_html.py
 ```
 
-カレントディレクトリ以下の既在のhtmlファイルの<head>の次にmeta refreshを追加したhtmlファイルを生成する。  
+カレントディレクトリ以下の既在のhtmlファイルのheadタグの次にmeta refreshを追加したhtmlファイルを生成する。  
 移転先のURLや移動開始時間や保存先などを設定する。  
 
 ```
