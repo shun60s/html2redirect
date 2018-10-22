@@ -34,6 +34,13 @@ python3 add_message_html.py
 python3 add_refresh_html.py
 ```
 
+カレントディレクトリ以下の既在のhtmlファイルのheadタグの前にjava scriptのlocation.hrefを追加したhtmlファイルを生成する。  
+移転先のURLや移動開始時間や保存先などを設定する。  
+
+```
+python3 add_javascript_html.py
+```
+
 
 ## 使用上の注意  
 移動元と移動先のディレクトリー構造とファイル名は同じものであると仮定している。   
