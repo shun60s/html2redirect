@@ -14,6 +14,13 @@
 python3 make_redirect_html.py
 ```
 
+カレントディレクトリ以下の既在のhtmlファイルと同じ名称をもつ、javascriptでリダイレクトの内容のhtml(UTF-8)を生成する。  
+移転先のURLや保存先などを設定する。  
+```
+python3 make_javascript_html.py
+```
+
+
 カレントディレクトリ以下の既在のhtmlファイルのheadタグの次にcanonicalを追加したhtmlファイルを生成する。  
 移転先のURLや保存先などを設定する。  
 
